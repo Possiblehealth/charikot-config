@@ -1,7 +1,12 @@
-target/
 .DS_Store
-.idea
+*.log
 *.iml
+.project
+.settings
+.idea/*
+*/.idea/*
+.tmp
+target
 */logs/*
 logs/*
 playbooks/**/all.retry

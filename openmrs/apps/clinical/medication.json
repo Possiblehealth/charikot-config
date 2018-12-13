@@ -2,11 +2,14 @@
   "commonConfig": {},
   "tabConfig": {
     "allMedicationTabConfig": {
+      "orderSet": {
+        "calculateDoseOnlyOnCurrentVisitValues": false
+      },
       "inputOptionsConfig": {
         "defaultDurationUnit": "Day(s)",
+        "hideOrderSet": false,
         "defaultInstructions": "As directed",
-        "frequencyDefaultDurationUnitsMap": [
-          {
+        "frequencyDefaultDurationUnitsMap": [{
             "minFrequency": "1/7",
             "maxFrequency": 5,
             "defaultDurationUnit": "Day(s)"
@@ -23,29 +26,29 @@
           }
         ],
         "routes": [
-		  "Oral",
-		  "Topical",
-		  "Intravenous",
+          "Oral",
+          "Topical",
+          "Intravenous",
           "Intramuscular",
-		  "Inhalation",
+          "Inhalation",
           "Nasal",
-		  "Intraosseous",
+          "Intraosseous",
           "Intrathecal",
           "Intraperitoneal",
           "Intradermal",
-		  "Nasogastric",
-		  "Per Rectum",
-		  "Per Vaginal",
+          "Nasogastric",
+          "Per Rectum",
+          "Per Vaginal",
           "Sub Cutaneous",
-		  "Sub Lingual"
+          "Sub Lingual"
         ],
         "doseUnits": [
-		  "Tablet(s)",
-		  "Capsule(s)",
-		  "Drop",
-		  "ml",
-		  "mg",
-		  "Unit(s)",
+          "Tablet(s)",
+          "Capsule(s)",
+          "Drop",
+          "ml",
+          "mg",
+          "Unit(s)",
           "Teaspoon",
           "Tablespoon",
           "Puff(s)",
@@ -85,8 +88,16 @@
             "doseUnits": "Drop",
             "route": "Topical"
           },
+          "Food Supplement": {
+            "doseUnits": "Unit(s)",
+            "route": "Oral"
+          },
           "Gel": {
             "route": "Topical"
+          },
+          "Granule": {
+            "doseUnits": "Unit(s)",
+            "route": "Oral"
           },
           "Inhaler": {
             "doseUnits": "Puff(s)",
@@ -95,6 +106,9 @@
           "Injection": {
             "doseUnits": "mg",
             "route": "Intravenous"
+          },
+          "Jelly": {
+            "route": "Topical"
           },
           "Liquid": {
             "doseUnits": "ml",
@@ -111,6 +125,7 @@
             "route": "Per Vaginal"
           },
           "Powder": {
+            "doseUnits": "mg",
             "route": "Topical"
           },
           "Solution": {
@@ -130,7 +145,7 @@
             "route": "Oral"
           }
         },
-        "routesToMakeDoseSectionNonMandatory" : ["Topical","Inhalation"]
+        "routesToMakeDoseSectionNonMandatory": ["Topical", "Inhalation"]
       },
       "drugOrderHistoryConfig": {
         "view": "default"
