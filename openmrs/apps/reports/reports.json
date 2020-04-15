@@ -316,6 +316,13 @@
 					}
 				},
 				{
+					"name": "Aama Program to be given",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Aama_Program_to_be_given.sql"
+					}
+				},
+				{
 					"name": "Aama Program",
 					"type": "MRSGeneric",
 					"config": {
