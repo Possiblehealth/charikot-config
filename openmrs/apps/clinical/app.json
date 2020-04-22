@@ -1596,7 +1596,7 @@
                 "required": true,
 				"multiSelect": true	
             },
-			"Coivd-Sample collected": {
+			"Covid-Sample collected": {
                 "required": true
             },
 		"Delivery Note-Complication Present": {
