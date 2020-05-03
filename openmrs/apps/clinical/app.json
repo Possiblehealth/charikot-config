@@ -1244,6 +1244,9 @@
                 "required": true,
 				"multiSelect": true
             },
+			"Depression FU-Schedule appointment date": {
+                "required": true,
+            },
 			"Depression Initial-Progress Toward Goal of Treatment": {
                 "required": true
             },
