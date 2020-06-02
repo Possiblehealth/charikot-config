@@ -316,13 +316,6 @@
 					}
 				},
 				{
-					"name": "Aama Program to be given",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Aama_Program_to_be_given.sql"
-					}
-				},
-				{
 					"name": "Aama Program",
 					"type": "MRSGeneric",
 					"config": {
@@ -1192,10 +1185,17 @@
 				},
 
 				{
-					"name": "Summary of Indoor Services Minor Surgeries",
+					"name": "Summary of Indoor Services Minor Surgeries OPD ER",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/minor_surgeries.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/minor_surgeries_opd_er.sql"
+					}
+				},
+				{
+					"name": "Summary of Indoor Services Minor Surgeries IPD",
+					"type": "MRSGeneric",
+					"config": {
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/minor_surgeries _ipd.sql"
 					}
 				},
 
