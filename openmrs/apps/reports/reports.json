@@ -309,10 +309,10 @@
 					}
 				},
 				{
-					"name": "Safe Abortion Total",
+					"name": "Aama Program to be given",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Safe_Abortion_Total.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Aama_Program_to_be_given.sql"
 					}
 				},
 				{
@@ -325,7 +325,6 @@
 			]
 		}
 	},
-
 
 	"07-Family Planning Program": {
 		"name": "07-Family Planning Program",
