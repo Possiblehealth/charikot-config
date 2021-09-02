@@ -189,27 +189,27 @@
             }
         },
 	"patientSearch": {
-		"address": {
-			"label": "Municipality/VDC",
-			"placeholder": "VDC/Municipality/Ward",
-			"field":["city_village","address1"]
-	},
-	"customAttributes": {
-		"label": "Advance Search",
-			"placeholder": "MemberHouseHold/Village",
-			"fields": ["MemberHouseHold","Village"]
-	},
-	"searchByPatientIdentifier":true
-	},
-	"patientSearchResults": {
-		"personAttributes":{
-			"fields": [ "MemberHouseHold","Village" ]
-	},
-	"address": {
-		"fields": ["city_village", "address1"]
-		}	 
-	},              
-	"enableNepaliCalendar": true,
-	"displayNepaliDates": true
-	}
+			"address": {
+				"label": "Municipality/VDC",
+				"placeholder": "VDC/Municipality/Ward",
+				"field":["city_village","address1"]
+			  },
+			"customAttributes": {
+				"label": "Advance Search",
+				"placeholder": "MemberHouseHold/Village",
+				"fields": ["MemberHouseHold","Village"]
+			},
+		"searchByPatientIdentifier":true
+		},
+		 "patientSearchResults": {
+			"personAttributes":{
+						"fields": [ "MemberHouseHold","Village" ]
+				},
+					"address": {
+						"fields": ["city_village", "address1"]
+					}	 
+			},              
+				"enableNepaliCalendar": true,
+				"displayNepaliDates": true
+			}
 }
