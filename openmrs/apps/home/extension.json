@@ -20,15 +20,15 @@
     "requiredPrivilege": "app:clinical"
   
   },
-  "bahmni_adt": {
-        "id": "bahmni.adt",
-        "extensionPointId": "org.bahmni.home.dashboard",
-        "type": "link",
-        "label": "InPatient",
-        "url": "../adt/",
-        "icon": "fa-bed",
-        "order": 3,
-        "requiredPrivilege": "app:adt"
+  "adt": {
+    "id": "bahmni.adt",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_INPATIENT_KEY",
+    "url": "../adt/",
+    "icon": "icon-bahmni-inpatient",
+    "order": 3,
+    "requiredPrivilege": "app:adt"
   },
   "bahmniIpd": {
     "id": "bahmni.ipd",
