@@ -29,9 +29,9 @@
         "onAdmissionForwardTo": "#/patient/{{patientUuid}}/visit/{{visitUuid}}/encounter/{{encounterUuid}}/bed",
         "onTransferForwardTo": "#/patient/{{patientUuid}}/visit/{{visitUuid}}/encounter/{{encounterUuid}}/bed",
         "onDischargeForwardTo": "#/patient/search",
-        "defaultVisitType": "General",
+        "defaultVisitType": "IPD",
         "dashboard": {
-            "dashboardName": "General",
+            "dashboardName": "IPD",
             "sections": {
                 "patient_information": {
                     "title": "Patient Information",
