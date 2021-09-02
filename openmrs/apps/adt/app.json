@@ -1,6 +1,7 @@
 {
     "id": "bahmni.adt.admission",
-    "extensionPoints": [{
+    "extensionPoints": [
+        {
             "id": "org.bahmni.adt.admit.action",
             "description": "Bahmni Patient Admission Action"
         },
@@ -23,39 +24,32 @@
         "visitUuid"
     ],
     "config": {
-        "enableNepaliCalendar": true,
-        "displayNepaliDates": true,
-        "patientConfig": {
-            "showMiddleNameOn": ["patient-profile", "patient-context"]
-        },
-        "diagnosisStatus": "Inactive",
+	"enableNepaliCalendar": true,
+	"displayNepaliDates": true,
         "onAdmissionForwardTo": "#/patient/{{patientUuid}}/visit/{{visitUuid}}/encounter/{{encounterUuid}}/bed",
         "onTransferForwardTo": "#/patient/{{patientUuid}}/visit/{{visitUuid}}/encounter/{{encounterUuid}}/bed",
         "onDischargeForwardTo": "#/patient/search",
-        "defaultVisitType": "IPD",
-        "maxPatientsPerBed": 2,
+        "defaultVisitType": "General",
         "dashboard": {
-            "translationKey": "DASHBOARD_TAB_GENERAL_KEY",
-            "conceptName": "Adt Notes",
+            "dashboardName": "General",
             "sections": {
-                "patientInformation": {
-                    "translationKey": "DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
+                "patient_information": {
+                    "title": "Patient Information",
                     "type": "patientInformation",
-                    "displayOrder": 0,
-                    "patientAttributes": ["caste", "class", "education", "occupation", "debt", "distanceFromCenter", "isUrban", "cluster", "RationCard", "familyIncome"],
-                    "addressFields": ["address1", "address2", "cityVillage", "countyDistrict"]
+                    "patientAttributes": [],
+                    "displayOrder": 0
                 },
                 "vitals": {
-                    "translationKey": "DASHBOARD_TITLE_VITALS_KEY",
+                    "title": "Vitals",
                     "type": "vitals",
-                    "displayOrder": 1,
                     "isObservation": true,
                     "dashboardConfig": {
-                        "conceptNames": ["Vitals"],
+                        "conceptNames": [
+                            "Vitals"
+                        ],
                         "numberOfVisits": 2
-                    }
-                },
-		"expandedViewConfig": {
+                    },
+                    "expandedViewConfig": {
                         "conceptNames": [
                             "Nutritional Values"
                         ],
@@ -63,40 +57,21 @@
                         "showDetailsButton": true
                     },
                     "displayOrder": 1
-                },    
-                "admissionDetails": {
-                    "translationKey": "DASHBOARD_TITLE_ADMISSION_DETAILS_KEY",
+                },
+                "admission_details": {
+                    "title": "Admission Details",
                     "type": "admissionDetails",
                     "numberOfVisits": 1,
                     "showDetailsButton": true,
                     "displayOrder": 2
                 },
                 "disposition": {
-                    "translationKey": "DASHBOARD_TITLE_DISPOSITION_KEY",
+                    "title": "Disposition",
                     "type": "disposition",
                     "numberOfVisits": 2,
                     "displayOrder": 3
-                },
-                "diagnosis": {
-                    "translationKey": "DASHBOARD_TITLE_DIAGNOSIS_KEY",
-                    "type": "diagnosis",
-                    "numberOfVisits": 2,
-                    "showDetailsButton": true,
-                    "displayOrder": 4
-                },
-                "navigationLinksControl": {
-                    "translationKey": "DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
-                    "type": "navigationLinksControl",
-                    "displayOrder": 5,
-                    "showLinks": ["home", "visit", "registration", "inpatient", "enrolment", "visitAttribute"]
-                },
-                "conditions": {
-                    "translationKey": "CONDITION_LIST_DISPLAY_CONTROL_TITLE",
-                    "type": "conditionsList",
-                    "displayOrder": 6
                 }
             }
         }
-
     }
 }
