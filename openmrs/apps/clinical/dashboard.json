@@ -48,19 +48,24 @@
                 "displayOrder": 1
             },
             "diagnosis": {
-                "title": "Diagnosis",
+                "translationKey": "DASHBOARD_TITLE_DIAGNOSIS_KEY",
                 "type": "diagnosis",
                 "showCertainty": true,
                 "showOrder": true,
                 "showDetailsButton": true,
                 "displayOrder": 2
+	    },
+            "conditions": {
+                "translationKey": "CONDITION_LIST_DISPLAY_CONTROL_TITLE",
+                "type": "conditionsList",
+                "displayOrder": 3    
             },
             "formDisplaySummary":{
-                "title": "Active Visit notes",
+                "translationKey": "DASHBOARD_TITLE_ACTIVE_VISIT_NOTES_KEY",
                 "type": "forms",
                 "dashboardConfig": {
                     "title": null,
-                    "maximumNoOfVisits": 1
+                    "maximumNoOfVisits": 2
                 },
                 "formGroup":["Patient Vitals","Acute OPD visit","Acute Abdominal Complaint","Acute HEENT Complaint","COVID-19 Screening",
                              "Acute MSK Complaint","Acute Skin Complaint","Acute GU Complaint","ANC","Asthma, Progress","Childhood Illness (Children aged below 2 months)",
