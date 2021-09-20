@@ -29,7 +29,7 @@
 		"insurance":{
 			"title":"Insurance Information",
 			"attributes":[
-				"NHIS Member",
+				"NHIS Member Active",
 				"NHIS Number",
 				"NHIS Primary Contact Point"
 			]
