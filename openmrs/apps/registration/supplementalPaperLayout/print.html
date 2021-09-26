@@ -1,19 +1,20 @@
 <link rel="stylesheet" href="/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/css/print.css"/>
+
 <div>
-    <style>
-    </style>
     <div class="row fontForSticker">
         <!-- <div class="left"> -->
 
             <div class="row">
                 <div class="left"><b>{{patient.primaryIdentifier.identifier}}</b></div>
                 
-                <div class="right">Date:&nbsp;<span style="text-align:right;" id="todayDate">{{today | date:'dd/MM/yyyy'}}</span></div>
+                <div class="right">Renew:&nbsp;<span style="text-align:right;" id="todayDate">{{today | date:'dd/MM/yyyy'}}</span></div>
                 <!-- <span style="text-align:left;"><b>{{patient.primaryIdentifier.identifier}}</b></span>
 		        Date:&nbsp;<span style="text-align:right;" id="todayDate">{{today | date:'dd/MM/yyyy'}}</span> -->
             </div>	
             <div class="row">
-                <span><b>NHIS {{patient['NHIS Number']}}</b></span>
+                <div class="left"> <span><b>NHIS: {{patient['NHIS Number']}}</b></span></div>
+               
+                <div class="right">Reg: <span  id="regDate">{{patient.registrationDate | date:'dd/MM/yyyy'}}</span></div>
             </div>	
 
             <div class="row">
@@ -43,8 +44,7 @@
               
             </div>
         </div>
-    </div>
-
+    
 <script src="/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/js/jquery.js"></script>
 <script src="/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/js/nepaliDatePicker.min.js"></script>
 <script src="/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/js/printwala.js"></script>
